@@ -8,6 +8,8 @@ This page covers some fundamentals and concepts learnt from AlgoExpert for Syste
 [Client-Server Model](#Client—Server-Model)  
 [Network Protocols](#Network-Protocols)   
 [Storage](#Storage)   
+[Latency And Throughput](#Latency-And-Throughput)   
+[Availability](#Availability)   
 
 <a name="Client—Server-Model"/>
 
@@ -108,3 +110,54 @@ Short for Random Access Memory (RAM). Data stored in memory will be lost when th
 #### Persistent Storage
 
 Persistent Storage Usually refers to disk, but in general it is any form of storage that persists if the process in charge of managing it dies.
+
+
+<a name="Latency-And-Throughput"/>
+
+## Latency And Throughput
+
+#### Latency
+
+The time it takes for a certain operation to complete in a system. Most often this measure is a time duration, like milliseconds or seconds. You should know these orders of magnitude: 
+- Reading 1 MB from RAM: 250 μs (0.25 ms)
+- Reading 1 MB from SSD: 1,000 μs (1 ms)
+- Transfer 1 MB over Network: 10,000 μs (10 ms)
+- Reading 1MB from HDD: 20,000 μs (20 ms)
+- Inter-Continental Round Trip: 150,000 μs (150 ms)
+
+
+#### Throughput
+
+The number of operations that a system can handle properly per time unit. For instance the throughput of a server can often be measured in requests per second (RPS or QPS). 
+
+<a name="Availability"/>
+
+## Availability
+
+
+#### Availability 
+
+The odds of a particular server or service being up and running at any point in time, usually measured in percentages. A server that has 99% availability will be operational 99% of the time (this would be described as having two nines of availability).
+
+#### High Availability
+
+Used to describe systems that have particularly high levels of availability, typically 5 nines or more; sometimes abbreviated "HA".
+
+#### Nines 
+
+Typically refers to percentages of uptime. For example, 5 nines of availability means an uptime of 99.999% of the time. Below are the downtimes expected per year depending on those 9s:  - 99% (two 9s): 87.7 hours
+- 99.9% (three 9s): 8.8 hours
+- 99.99%: 52.6 minutes
+- 99.999%: 5.3 minutes
+
+#### Redundancy
+
+The process of replicating parts of a system in an effort to make it more reliable.
+	
+#### SLA 
+
+SLA Short for "service-level agreement", an SLA is a collection of guarantees given to a customer by a service provider. SLAs typically make guarantees on a system's availability, amongst other things. SLAs are made up of one or multiple SLOs.
+
+#### SLO
+
+Short for "service-level objective", an SLO is a guarantee given to a customer by a service provider. SLOs typically make guarantees on a system's availability, amongst other things. SLOs constitute an SLA.
