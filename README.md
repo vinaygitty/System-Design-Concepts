@@ -131,6 +131,7 @@ In order for multiple programs to listen for new network connections on the same
 
 Short for Domain Name System, it describes the entities and protocols involved in the translation from domain names to IP Addresses. Typically, machines make a DNS query to a well known entity which is responsible for returning the IP address (or multiple ones) of the requested domain name in the response. 
 
+[Back to Home](https://github.com/vinaygitty/System-Design-Concepts/blob/main/README.md)
 
 <a name="Network-Protocols"/>
 
@@ -178,7 +179,7 @@ Sometimes more broadly referred to as just a (network) packet, an IP packet is e
 
 <a name="Storage"/> 
 
-[Back to Home](vinaygitty/System-Design-Concepts/edit/main/README.md)
+[Back to Home](https://github.com/vinaygitty/System-Design-Concepts/blob/main/README.md)
 
 ## Storage 
 
@@ -206,6 +207,7 @@ Short for Random Access Memory (RAM). Data stored in memory will be lost when th
 
 Persistent Storage Usually refers to disk, but in general it is any form of storage that persists if the process in charge of managing it dies.
 
+[Back to Home](https://github.com/vinaygitty/System-Design-Concepts/blob/main/README.md)
 
 <a name="Latency-And-Throughput"/>
 
@@ -227,6 +229,8 @@ The time it takes for a certain operation to complete in a system. Most often th
 #### Throughput
 
 The number of operations that a system can handle properly per time unit. For instance the throughput of a server can often be measured in requests per second (RPS or QPS). 
+
+[Back to Home](https://github.com/vinaygitty/System-Design-Concepts/blob/main/README.md)
 
 <a name="Availability"/>
 
@@ -271,6 +275,7 @@ SLA Short for "service-level agreement", an SLA is a collection of guarantees gi
 
 Short for "service-level objective", an SLO is a guarantee given to a customer by a service provider. SLOs typically make guarantees on a system's availability, amongst other things. SLOs constitute an SLA.
 
+[Back to Home](https://github.com/vinaygitty/System-Design-Concepts/blob/main/README.md)
 
 <a name="Caching"/>
 
@@ -302,6 +307,7 @@ Cache Miss When requested data could have been found in a cache but isn't. This 
 ####  Content Delivery Network (CDN)
  A CDN is a third-party service that acts like a cache for your servers. Sometimes, web applications can be slow for users in a particular region if your servers are located only in another region. A CDN has servers all around the world, meaning that the latency to a CDN's servers will almost always be far better than the latency to your servers. A CDN's servers are often referred to as PoPs (Points of Presence). Two of the most popular CDNs are Cloudflare and Google Cloud CDN. 
 
+[Back to Home](https://github.com/vinaygitty/System-Design-Concepts/blob/main/README.md)
 
 <a name="Proxies"/>
 
@@ -322,6 +328,7 @@ A server that sits between clients and servers and acts on behalf of the servers
 #### Nginx
 Pronounced "engine X"—not "N jinx", Nginx is a very popular webserver that's often used as a reverse proxy and load balancer. Learn more: https://www.nginx.com/
 
+[Back to Home](https://github.com/vinaygitty/System-Design-Concepts/blob/main/README.md)
 
 <a name="LoadBalancers"/>
 
@@ -351,6 +358,8 @@ When distributing a workload across a set of servers, that workload might be spr
 
 Pronounced "engine X"—not "N jinx", Nginx is a very popular webserver that's often used as a reverse proxy and load balancer. Learn more: https://www.nginx.com/
 
+[Back to Home](https://github.com/vinaygitty/System-Design-Concepts/blob/main/README.md)
+
 <a name="Hashing"/>
 
 ## Hashing
@@ -372,6 +381,8 @@ A type of hashing also coined highest random weight hashing. Allows for minimal 
 #### SHA 
 
 Short for "Secure Hash Algorithms", the SHA is a collection of cryptographic hash functions used in the industry. These days, SHA-3 is a popular choice to use in a system.
+
+[Back to Home](https://github.com/vinaygitty/System-Design-Concepts/blob/main/README.md)
 
 <a name="RelationalDatabases"/>
 
@@ -449,6 +460,8 @@ A consistency model which is unlike Strong Consistency. In this model, reads mig
 
 A relational database that uses a dialect of SQL called PostgreSQL. Provides ACID transactions. Learn more: https://www.postgresql.org/
 
+[Back to Home](https://github.com/vinaygitty/System-Design-Concepts/blob/main/README.md)
+
 <a name="Key-ValueStores"/>
 
 ## Key-Value Stores
@@ -477,6 +490,7 @@ An in-memory key-value store. Does offer some persistent storage options but is 
 
 ZooKeeper is a strongly consistent, highly available key-value store. It's often used to store important configuration or to perform leader election. Learn more: https://zookeeper.apache.org/
 
+[Back to Home](https://github.com/vinaygitty/System-Design-Concepts/blob/main/README.md)
 
 <a name="SpecializedStorageParadigms"/>
 
@@ -561,6 +575,7 @@ A popular open-source time series database, typically used for monitoring purpos
 
 A popular graph database that consists of nodes, relationships, properties, and labels. Learn more: https://neo4j.com/
 
+[Back to Home](https://github.com/vinaygitty/System-Design-Concepts/blob/main/README.md)
 
 <a name="ReplicationAndSharding"/>
 
@@ -589,6 +604,8 @@ Sometimes called data partitioning, sharding is the act of splitting a database 
 #### Hot Spot 
 
 When distributing a workload across a set of servers, that workload might be spread unevenly. This can happen if your sharding key or your hashing function are suboptimal, or if your workload is naturally skewed: some servers will receive a lot more traffic than others, thus creating a "hot spot". 
+
+[Back to Home](https://github.com/vinaygitty/System-Design-Concepts/blob/main/README.md)
 
 <a name="LeaderElection"/>
 
@@ -624,7 +641,7 @@ Etcd is a strongly consistent and highly available key-value store that's often 
 
 ZooKeeper is a strongly consistent, highly available key-value store. It's often used to store important configuration or to perform leader election. Learn more: https://zookeeper.apache.org/
 
-
+[Back to Home](https://github.com/vinaygitty/System-Design-Concepts/blob/main/README.md)
 
 <a name="Peer-To-PeerNetworks"/>
 
@@ -642,6 +659,7 @@ A collection of machines referred to as peers that divide a workload between the
 
 When a set of machines talk to each other in a uncoordinated manner in a cluster to spread information through a system without requiring a central source of data. 
 
+[Back to Home](https://github.com/vinaygitty/System-Design-Concepts/blob/main/README.md)
 
 <a name="PollingAndStreaming"/>
 
@@ -659,6 +677,8 @@ The act of fetching a resource or piece of data regularly at an interval to make
 
 In networking, it usually refers to the act of continuously getting a feed of information from a server by keeping an open connection between the two machines or processes. 
 
+[Back to Home](https://github.com/vinaygitty/System-Design-Concepts/blob/main/README.md)
+
 <a name="Configuration"/>
 
 ## Configuration
@@ -668,6 +688,8 @@ In networking, it usually refers to the act of continuously getting a feed of in
 #### Configuration 
 
 A set of parameters or constants that are critical to a system. Configuration is typically written in JSON or YAML and can be either static, meaning that it's hard-coded in and shipped with your system's application code (like frontend code, for instance), or dynamic, meaning that it lives outside of your system's application code. 
+
+[Back to Home](https://github.com/vinaygitty/System-Design-Concepts/blob/main/README.md)
 
 <a name="RateLimiting"/>
 
@@ -696,6 +718,7 @@ Short for "distributed denial-of-service attack", a DDoS attack is a DoS attack 
 
 An in-memory key-value store. Does offer some persistent storage options but is typically used as a really fast, best-effort caching solution. Redis is also often used to implement rate limiting. Learn more: https://redis.io/
 
+[Back to Home](https://github.com/vinaygitty/System-Design-Concepts/blob/main/README.md)
 
 <a name="LoggingAndMonitoring"/>
 
@@ -719,6 +742,7 @@ The process of having visibility into a system's key metrics, monitoring is typi
 
 The process through which system administrators get notified when critical system issues occur. Alerting can be set up by defining specific thresholds on monitoring charts, past which alerts are sent to a communication channel like Slack. 
 
+[Back to Home](https://github.com/vinaygitty/System-Design-Concepts/blob/main/README.md)
 
 <a name="PublishAndSubscribePattern"/>
 
@@ -748,7 +772,7 @@ A distributed messaging system created by LinkedIn. Very useful when using the s
 
 A highly-scalable Pub/Sub messaging service created by Google. Guarantees at-least-once delivery of messages and supports "rewinding" in order to reprocess messages. Learn more: https://cloud.google.com/pubsub/
 
-
+[Back to Home](https://github.com/vinaygitty/System-Design-Concepts/blob/main/README.md)
 
 <a name="MapReduce"/>
 
@@ -780,7 +804,7 @@ A Distributed File System is an abstraction over a (usually large) cluster of ma
 
 A popular, open-source framework that supports MapReduce jobs and many other kinds of data-processing pipelines. Its central component is HDFS (Hadoop Distributed File System), on top of which other technologies have been developed. Learn more: https://hadoop.apache.org/
 
-
+[Back to Home](https://github.com/vinaygitty/System-Design-Concepts/blob/main/README.md)
 
 <a name="SecurityAndHTTPS"/>
 
@@ -848,6 +872,7 @@ The process through which a client and a server communicating over HTTPS exchang
 
 - The client and the server use the client hello, the server hello, and the premaster secret to then generate the same symmetric-encryption session keys, to be used to encrypt and decrypt all data communicated during the remainder of the connection. 
 
+[Back to Home](https://github.com/vinaygitty/System-Design-Concepts/blob/main/README.md)
 
 <a name="APIDesign"/>
 
@@ -895,3 +920,4 @@ When a network request potentially warrants a really large response, the relevan
 
 Stands for Create, Read, Update, Delete Operations. These four operations often serve as the bedrock of a functioning system and therefore find themselves at the core of many APIs. 
 
+[Back to Home](https://github.com/vinaygitty/System-Design-Concepts/blob/main/README.md)
