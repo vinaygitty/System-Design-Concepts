@@ -75,6 +75,8 @@ This page covers some fundamentals and concepts learnt from AlgoExpert for Syste
 **[API Design](#APIDesign)**   
 &emsp;&emsp;[HTTP](#HTTP2) | [YAML](#YAML) | [ACL](#ACL) | [Pagination](#Pagination) | [CRUD Operations](#CRUDOperations) 
 
+**[Common Architecture Patterns](#CommonArchitecturePatterns)**   
+&emsp;&emsp;[SOA](#SOA) | [MicroServices](#MicroServices)  
 
 <a name="Client—Server-Model"/>
 
@@ -882,25 +884,31 @@ The process through which a client and a server communicating over HTTPS exchang
 
 #### HTTP 
 
-The HyperText Transfer Protocol is a very common network protocol implemented on top of TCP. Clients make HTTP requests, and servers respond with a response. Requests typically have the following schema:
+The HyperText Transfer Protocol is a very common network protocol implemented on top of TCP. Clients make HTTP requests, and servers respond with a response. 
 
-<pre>  
-
+**Requests**  typically have the following schema:
+<pre>
 - host: string (example: testgateway.io)
+- path or parameters: Path mapping (example: /test/*, /order/{orderId} would process /order/A0001)
 - port: integer (example: 80 or 443)
 - method: string (example: GET, PUT, POST, DELETE, OPTIONS or PATCH)
 - headers:  pair list (example: "Content-Type" => "application/json")
-- body: opaque sequence of bytesResponses typically have the following schema: status code: integer (example: 200, 401)
-- headers:  pair list (example: "Content-Length" => 1238)
-- body: opaque sequence of bytes\
+- body: opaque sequence of bytes
+</pre>
 
-</pre>    
+**Responses** typically have the following schema:
+<pre>
+- status code: integer (example: 200, 401)
+- headers:  pair list (example: "Content-Length" => 1238)
+- body: opaque sequence of bytes
+</pre>
+    
 
 <a name="YAML"/>
 
 #### YAML
 
-A file format mostly used in REST API configuration documentation. Example:version: 1.0
+A file format mostly used in REST API configuration documentation.
 
 <a name="ACL"/>
 
@@ -919,5 +927,31 @@ When a network request potentially warrants a really large response, the relevan
 #### CRUD Operations
 
 Stands for Create, Read, Update, Delete Operations. These four operations often serve as the bedrock of a functioning system and therefore find themselves at the core of many APIs. 
+
+[Back to Home](https://github.com/vinaygitty/System-Design-Concepts/blob/main/README.md)
+
+<a name="CommonArchitecturePatterns"/>
+
+## Common Architecture Patterns
+
+<a name="SOA"/>
+
+#### SOA
+
+**Service Oriented Architecture (SOA)** is used to develop Enterprise applications by using a collection of services which communicates each other. Service-OrientedArchitecture (SOA) is a set of principles and methodologies for designing and developing software in the form of interoperable services.
+
+Principles of SOA:
+- loose-coupling
+- Re-usability
+- Interoperability
+- Flexible
+
+<a name="MicroServices"/>
+
+#### Micro Services
+
+In a micro service approach of architecture, applications are build as suites of services. Important characteristics are these services run in **single process** and are **independently deployable**/upgradable/replacable and scalable thus offering benefits like **horizantal scaling** and **Fault tolerance**. 
+
+With each service providing **firm module boundary**, they are typically organized around business capabilities with cross functional teams(mostly two pizza team) owning development, deployment and maintenance of service.
 
 [Back to Home](https://github.com/vinaygitty/System-Design-Concepts/blob/main/README.md)
