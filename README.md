@@ -889,8 +889,8 @@ The HyperText Transfer Protocol is a very common network protocol implemented on
 **Requests**  typically have the following schema:
 <pre>
 - host: string (example: testgateway.io)
-- path or parameters: Path mapping (example: /test/*, /order/{orderId} would process /order/A0001)
 - port: integer (example: 80 or 443)
+- path or parameters: Path mapping (example: /test/*, /order/{orderId} would process /order/A0001)
 - method: string (example: GET, PUT, POST, DELETE, OPTIONS or PATCH)
 - headers:  pair list (example: "Content-Type" => "application/json")
 - body: opaque sequence of bytes
