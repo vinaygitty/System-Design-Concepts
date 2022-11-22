@@ -2,7 +2,7 @@
 
 Building scalable, production-ready applications is both art and science. Science, in that it requires knowledge of many topics in computer engineering; art, in that it demands an eye for making smart design choices and piecing together the right technologies.
 
-This page covers some fundamentals and concepts learnt from AlgoExpert for System Design.
+This page covers some fundamentals and concepts learnt from AlgoExpert and other sources for System Design.
 
 ### Table of Contents  
 
